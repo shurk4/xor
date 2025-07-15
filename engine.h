@@ -47,7 +47,7 @@ private:
     void runEncryptFile();
 
 signals:
-    void signalStop();
+    void signalStop(); // Останавливает все запущенные потоки
     void signalEncryptStarted(QString);
     void signalEncryptProgress(int);
     void signalEncryptComplited(QString);
