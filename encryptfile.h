@@ -28,9 +28,11 @@ private:
     int dataSize = 256; // Размер считываемых данных
     QByteArray encryptData(QByteArray &_data); // Шифрование данных
 
-
+    // Переменные для рассчёта прогресса работы с файлом
     int fileSize;
     int progressStep;
+
+    // Анализ имеющихся выходных файлов для дальнейшей нумерации
     int getFileNumber(const QString _fileName);
     bool isStopped = false;
 
